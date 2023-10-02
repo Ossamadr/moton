@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+.landing {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.landing video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+.landing .header {
+  width: 100%;
+  height: 72px;
+  background: rgba(255, 255, 255, 0.932);
+  z-index: 4;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.landing .header ul li {
+  list-style: none;
+  display: inline-block;
+}
+.landing .header ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  height: 72px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+.landing .header ul li a:hover {
+  background: rgba(0, 0, 0, 0.1921568627);
+}
+.landing .content {
+  padding: 20px;
+  background: rgba(16, 123, 55, 0.6431372549);
+  width: 500px;
+  max-width: 100%;
+}
+.landing .content h2 {
+  font-weight: 800;
+  color: wheat;
+  text-align: center;
+  margin-bottom: 20px;
+  cursor: default;
+}
+.landing .content a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 5px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.landing .content a:hover {
+  background: rgba(0, 0, 0, 0.1882352941);
+}
+@media (min-width: 420px) {
+  .landing .content {
+    margin: 50px;
+    border-radius: 20px;
+  }
+}
+.landing footer {
+  position: absolute;
+  height: 75px;
+  background: rgb(255, 255, 255);
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=main.css.map */

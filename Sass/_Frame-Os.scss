@@ -1,0 +1,55 @@
+//! *
+@mixin star {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+//! link
+@mixin link {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+//! li
+@mixin li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 10px;
+}
+//! flex box ------------------
+// flex center
+@mixin fl-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+// flex space between
+@mixin fl-sb-c {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+// flex space around
+@mixin fl-sa-c {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+//! Grid ----------------
+// grid Card
+@mixin grid-c {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+//! dark mood
+@function dark($color) {
+  @if (lightness($color) > 70) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}
+
